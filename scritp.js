@@ -1,7 +1,18 @@
-function oddOrEven (number) {
-    return (-1) ** number + 1 ? 'Четное' : 'Нечетное';
+function fizzBuzz (number) {
+    if (number % 3 === 0 && number % 5 === 0) {
+        alert('fizzBuzz');
+    }
+    else if (number % 3 === 0) {
+        alert('fizz');
+    }
+    else if (number % 5 === 0) {
+        alert('Buzz');
+    }
+    else { 
+        alert(number);
+    }
 }
 
 let number = +prompt('Введите число');
 
-alert(oddOrEven(number));
+fizzBuzz(number);
