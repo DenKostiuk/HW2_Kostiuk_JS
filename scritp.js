@@ -1,14 +1,15 @@
-let number1 = Math.floor(Math.random() * 100);
-let number2 = +prompt('Введите число');
+let str1 = prompt('Напишите что вам нравится изучать.');
+let str2 = prompt('Что еще вам нравится изучать?');
+let str3 = str1.slice(0, 21);
+let result = str3 + `Front-end, ` + str2;
 
-function comparisonNumbers (number1, number2) {
-    if (number1 > number2) {
-        alert(number1 + ' > ' + number2);
-    } else if (number1 < number2) {
-        alert(number1 + ' < ' + number2);
-    } else if (number1 = number2) {
-        alert(number1 + ' = ' + number2);
+function comparisonString (str2, str3) {
+    if (str1.toLowerCase().includes(str2.toLowerCase())) {
+        alert(result = str3 + `Front-end`);
+    } else {
+        alert(result);
     }
 }
+comparisonString(str2, str3);
 
-comparisonNumbers(number1, number2);
+console.log(str1.toLowerCase().includes(str2.toLowerCase()));
