@@ -1,5 +1,8 @@
-let string1 = 'Ytube';
-let string2 = 'ou';
-let sliceString = (string1.slice(0, 1) + string2 + string1.slice(1, 2).toUpperCase() + string1.slice(2));
+let numbers = [25, 1];
+let project = 'проект';
+let team = 'команда';
+let howMuch = 'Сколько';
+let sentence = 'нужно программистов чтобы сделать проект ?';
+let result = howMuch + ' ' + sentence + ' ' + project.slice(0, 1).toUpperCase() + project.slice(1) + ' ' + numbers[1] + ' ' + team.slice(0, 1).toUpperCase() + team.slice(1) + ' ' + numbers[0] + '.';
 
-console.log(sliceString); 
+console.log(result) // --> собрать предложение
