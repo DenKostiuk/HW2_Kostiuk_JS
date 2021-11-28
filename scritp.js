@@ -1,18 +1,14 @@
-function fizzBuzz (number) {
-    if (number % 3 === 0 && number % 5 === 0) {
-        alert('fizzBuzz');
-    }
-    else if (number % 3 === 0) {
-        alert('fizz');
-    }
-    else if (number % 5 === 0) {
-        alert('Buzz');
-    }
-    else { 
-        alert(number);
+let number1 = Math.floor(Math.random() * 100);
+let number2 = +prompt('Введите число');
+
+function comparisonNumbers (number1, number2) {
+    if (number1 > number2) {
+        alert(number1 + ' > ' + number2);
+    } else if (number1 < number2) {
+        alert(number1 + ' < ' + number2);
+    } else if (number1 = number2) {
+        alert(number1 + ' = ' + number2);
     }
 }
 
-let number = +prompt('Введите число');
-
-fizzBuzz(number);
+comparisonNumbers(number1, number2);
